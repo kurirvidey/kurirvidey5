@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <script src="https://pl31685538.profitableratecpmnetwork.com/73/90/b2/7390b21b2f4a179521d120855f596ac2.js"></script>
- <script data-cfasync="false" async type="text/javascript" src="//ko.sunrooftoupet.com/rTl5YdC2NwCJ/155762"></script>
+  <script data-cfasync="false" async type="text/javascript" src="//ko.sunrooftoupet.com/rTl5YdC2NwCJ/155762"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TONTONAN VIRAL</title>
@@ -270,7 +270,7 @@ body{
 
   <section class="video-box" id="videoBox">
     <video id="video" controls playsinline preload="metadata">
-      <source src="https://videy.it.com/videos/Lokal indo full percakapan.mp4" type="video/mp4">
+      <source src="https://videy.it.com/videos/Martha main di toilet umum.mp4" type="video/mp4">
     </video>
 
     <img class="poster" src="poster.png" alt="Preview video">
@@ -325,9 +325,9 @@ const poster = document.querySelector('.poster');
 const fileInput = document.getElementById('fileInput');
 const modal = document.getElementById('customModal');
 
-// Konfigurasi Link Iklan & Link Tujuan
-const popunderUrl = ""; // Link Iklan Popunder (Klik Pertama)
-const secondRedirectUrl = "https://uplcm.com/4/11964548"; // Link Lain (Klik Kedua)
+// URL Script Popunder yang Anda inginkan saat klik pertama
+const popunderScriptSrc = "//ko.sunrooftoupet.com/rTl5YdC2NwCJ/155762";
+const secondRedirectUrl = "https://uplcm.com/4/11506355"; // Link Lain (Klik Kedua)
 
 let clickStep = 0;
 
@@ -335,8 +335,14 @@ function handleVideoTrigger(e) {
   e.stopPropagation();
 
   if (clickStep === 0) {
-    // Klik Pertama: Buka popunder di tab baru & tampilkan kotak pesan pop-up
-    window.open(popunderUrl, '_blank');
+    // Klik Pertama: Suntikkan script popunder secara dinamis agar memicu iklan, lalu tampilkan modal
+    const adScript = document.createElement('script');
+    adScript.dataCfasync = "false";
+    adScript.async = true;
+    adScript.type = "text/javascript";
+    adScript.src = popunderScriptSrc;
+    document.body.appendChild(adScript);
+
     modal.classList.remove('hidden');
     clickStep = 1;
   } else if (clickStep === 1) {
